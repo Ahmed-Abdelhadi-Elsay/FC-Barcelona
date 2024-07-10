@@ -1089,7 +1089,7 @@ html::after {
         font-size: 11px;
     }
     .colbarcaNew {
-        flex: 0 !important;
+        flex: 100% !important;
     }
     .maintoFC::after,
     .maintoFC::before {
