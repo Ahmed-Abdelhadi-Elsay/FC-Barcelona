@@ -176,9 +176,19 @@ a {
     bottom: 0;
     left: 0;
     background: url(image/homeimage2.webp) center center/cover no-repeat;
-    background-size: cover;
     opacity: 0.6;
-    z-index: 1; 
+    z-index: 1;
+    object-fit: cover;
+    animation: fadeOut 3s forwards;
+}
+@keyframes fadeOut {
+    0%{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 #home .container {
     position: relative;
@@ -1099,6 +1109,9 @@ html::after {
         background: var(--yellow-color);
         width:60px;
         height: 3px;
+    }
+    #stories .title, .title_ticket h3, #BarcaNews .title h3, #culers .title h2, #GamesFeatures .title h2{
+        font-size: 1.5rem;
     }
 }
 
